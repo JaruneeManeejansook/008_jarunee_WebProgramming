@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Some Web Page</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-container {
+  /* ... */
+  display: flex;
+}
+.menu-container {
+  /* ... */
+  display: flex;
+  justify-content: center;    /* Add this */
+}
+.links {
+  border: 1px solid #fff;  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /* Add this */
+ align-items: stretch;    /* Change this */
+}
+.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+}
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;    /* Change this */
+ flex-direction: column;
+  align-items: center;      /* Add this */
+ flex-wrap: wrap;
+}
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;  /* <--- Really freaking cool! */
+  align-items: center;
+  flex-direction: row;  /* Update this */
+  align-items: center;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+</style>
+  </head>
+
+
+  <body>
+    <div class='menu-container'>
+     <div class='menu'>
+  <div class='date'>Aug 14, 2016</div>
+  <div class='links'>
+    <div class='signup'>Sign Up</div>      <!-- This is nested now -->
+    <div class='login'>Login</div>         <!-- This one too! -->
+<div class='header-container'>
+  <div class='header'>
+    <div class='subscribe'>Subscribe &#9662;</div>
+    <div class='logo'><img src='images/awesome-logo.svg'/></div>
+    <div class='social'><img src='images/social-icons.svg'/></div>
+ <div class='photo-grid-container'>
+  <div class='photo-grid'>
+    <div class='photo-grid-item first-item'>
+      <img src='images/one.svg'/>
+    </div>
+    <div class='photo-grid-item'>
+      <img src='images/two.svg'/>
+    </div>
+    <div class='photo-grid-item'>
+      <img src='images/three.svg'/>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+
+
+{
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+   }

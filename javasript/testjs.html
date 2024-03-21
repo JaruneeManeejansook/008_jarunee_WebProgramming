@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function convert_celsiustoFahrenheit(c){
+            let f = (c)*(9/5) +32;
+            return f;
+
+        }
+        function convert_Fahrenheittocelsius(f){
+            let celsius = ((f -32) *5) /9;
+            return celsius;
+
+        }
+        function oddEven (x){
+            let r = x%2;
+            if(r==0){
+                document.write(x + " is Odd number")
+            }else{
+                document.write(x + " is Odd number")
+            }
+        }
+        function hourToSecond(h){
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <script>
+       
+        /*2. oddEven*/
+        let n =5;
+        oddEven(n);
+
+        /* 4.oddEven*/
+        let h =2;
+        let second = hourToSecond(h);
+        document.write( "<br>convert" +h+ "hr(s) =" +second+"second<br>");
+
+        let name = 'jarunee';
+
+      /*   c = confirm('Are you sure?');
+        
+       if(c){
+            document.write("Hello"+name);     
+        }else{
+            document.write("Goodbye"+name);            
+        } */
+        let dept
+        let scores =[10,20,34,56,11];
+       /* document.write(scores[0])
+        document.write(dept)*/
+        let sum =0;
+        for (var i = 0; i < 5; i++) {
+            document.write(scores[i] + "<dr>");
+                sum+=scores[i];
+
+        }
+        document.write("sum =" + sum);
+        document.write("sum =" + sum/ scores.length);
+        
+        let j=0
+        while(j<5) {
+            document.write(scores[j] + "<dr>");
+                sum+=scores[j];
+                j++;
+            }
+
+        let c =40;
+        let f = convert_celsiustoFahrenheit(c);
+
+        /*let f = (c)*(9/5) +32;*/
+        document.write("Fahrenheit ( ํF)" + f + "<br>")
+
+        let celsius = convert_celsiustoFahrenheit(f)
+        document.write("celsius ( ํc)" + celsius)
+
+
+    </script>
+</body>
+</html>
